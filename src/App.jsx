@@ -14,7 +14,7 @@ import { ContactPage } from './pages/ContactPage';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="pycs-app">
         {/* Reset Scroll on Page Transition */}
         <ScrollToTop />
