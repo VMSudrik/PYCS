@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Button = ({
   children,
   variant = 'primary',
   size = 'md',
   href,
+  to,
   onClick,
   className = '',
   icon: Icon,
@@ -23,18 +25,33 @@ export const Button = ({
     </>
   );
 
-  if (href) {
-    const isExternal = href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:');
+  const destination = to || href;
+
+  if (destination) {
+    const isExternal =
+      destination.startsWith('http') ||
+      destination.startsWith('mailto:') ||
+      destination.startsWith('tel:') ||
+      destination.startsWith('//');
+
+    if (isExternal) {
+      return (
+        <a
+          href={destination}
+          className={baseClass}
+          target={!destination.startsWith('mailto:') && !destination.startsWith('tel:') ? '_blank' : undefined}
+          rel="noopener noreferrer"
+          {...props}
+        >
+          {content}
+        </a>
+      );
+    }
+
     return (
-      <a
-        href={href}
-        className={baseClass}
-        target={isExternal && !href.startsWith('mailto:') && !href.startsWith('tel:') ? '_blank' : undefined}
-        rel={isExternal ? 'noopener noreferrer' : undefined}
-        {...props}
-      >
+      <Link to={destination} className={baseClass} {...props}>
         {content}
-      </a>
+      </Link>
     );
   }
 

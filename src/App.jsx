@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { ScrollToTop } from './components/common/ScrollToTop';
@@ -17,7 +17,7 @@ export function App() {
   const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="pycs-app">
         {/* Reset Scroll on Page Transition */}
         <ScrollToTop />
@@ -47,7 +47,7 @@ export function App() {
           onClose={() => setIsAssessmentOpen(false)}
         />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

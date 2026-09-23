@@ -4,6 +4,7 @@ import { Card } from '../components/common/Card';
 import { Badge } from '../components/common/Badge';
 import { Button } from '../components/common/Button';
 import { companyInfo } from '../data/contentData';
+import logoImg from '../assets/logo.jpg';
 import { MapPin, Phone, Mail, MessageSquare, Send, CheckCircle2, ArrowUpRight, Clock, Building, Sparkles } from 'lucide-react';
 
 export const Contact = () => {
@@ -48,7 +49,7 @@ export const Contact = () => {
           <div>
             <Card style={{ padding: '2rem', height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-                <img src="/logo.jpg" alt="PYCS" style={{ height: '44px', borderRadius: '4px' }} />
+                <img src={logoImg} alt="PYCS" style={{ height: '44px', borderRadius: '4px' }} />
                 <div>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)' }}>
                     PushpYash Consultancy Services

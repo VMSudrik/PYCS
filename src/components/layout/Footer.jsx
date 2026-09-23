@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, ArrowUpRight, ShieldCheck, HeartHandshake } from 'lucide-react';
 import { companyInfo } from '../../data/contentData';
+import logoImg from '../../assets/logo.jpg';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ export const Footer = () => {
           {/* Col 1: Brand & Philosophy */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-              <img src="/logo.jpg" alt="PYCS Logo" style={{ height: '44px', borderRadius: '4px' }} />
+              <img src={logoImg} alt="PYCS Logo" style={{ height: '44px', borderRadius: '4px' }} />
               <div>
                 <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.2rem', color: 'var(--text-primary)', display: 'block' }}>
                   PUSHPYASH

@@ -4,6 +4,7 @@ import { Menu, X, ArrowRight, PhoneCall } from 'lucide-react';
 import { ThemeToggle } from '../common/ThemeToggle';
 import { Button } from '../common/Button';
 import { companyInfo } from '../../data/contentData';
+import logoImg from '../../assets/logo.jpg';
 
 export const Navbar = ({ onOpenAssessment }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,7 @@ export const Navbar = ({ onOpenAssessment }) => {
       <div className="container nav-container">
         {/* Brand */}
         <Link to="/" className="nav-brand" aria-label="PYCS - Pushpyash Consultancy Services">
-          <img src="/logo.jpg" alt="PYCS Logo" className="nav-brand-logo" />
+          <img src={logoImg} alt="PYCS Logo" className="nav-brand-logo" />
           <div className="nav-brand-text">
             <span className="nav-brand-title">PUSHPYASH</span>
             <span className="nav-brand-subtitle">Consultancy Services</span>
@@ -103,7 +104,7 @@ export const Navbar = ({ onOpenAssessment }) => {
       <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`} aria-hidden={!mobileMenuOpen}>
         <div className="mobile-drawer-header">
           <Link to="/" className="nav-brand" onClick={() => setMobileMenuOpen(false)}>
-            <img src="/logo.jpg" alt="PYCS Logo" style={{ height: '38px', borderRadius: '4px' }} />
+            <img src={logoImg} alt="PYCS Logo" style={{ height: '38px', borderRadius: '4px' }} />
             <div className="nav-brand-text">
               <span className="nav-brand-title" style={{ fontSize: '1.1rem' }}>PUSHPYASH</span>
               <span className="nav-brand-subtitle" style={{ fontSize: '0.62rem' }}>Consultancy Services</span>

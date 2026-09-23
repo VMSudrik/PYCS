@@ -1,3 +1,5 @@
+import founderPhoto from '../assets/ff.jpg';
+
 export const companyInfo = {
   name: "Pushpyash Consultancy Services (PYCS)",
   shortName: "PYCS",
@@ -299,7 +301,7 @@ export const leadershipData = {
   role: "Founder & Technical Advisor",
   specialization: "Digital Engineering & Manufacturing Technology Transformation",
   experienceYears: "28+",
-  photo: "/ff.jpg",
+  photo: founderPhoto,
   summary: "Hitesh Bhole is a veteran industry authority with over 28 years of blended global experience spanning Enterprise IT business process consulting, engineering product design, and multi-million-dollar digital transformation delivery. As the founder of Pushpyash Consultancy Services (PYCS), he acts as a trusted strategic advisor to established industrial leaders and fast-scaling engineering startups, guiding them through the complex transition toward Intelligent Autonomy and autonomous execution.",
   philosophyQuote: "Large-scale technology deployments rarely stall due to software limitations. They hit critical bottlenecks when technical acceleration outpaces human adaptation. By strategically adopting AI to absorb repetitive, mundane tasks and championing Human-Centered Collaboration, we empower teams to achieve predictable business value and rapid, sustainable ROI.",
   tierOnePedigree: [
