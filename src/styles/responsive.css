@@ -1,0 +1,119 @@
+/* ==========================================================================
+   PYCS Responsive Media Queries
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Large Desktops (1440px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Laptops & Tablets Landscape (< 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .pillars-tab-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablets Portrait (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .btn-lg {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.98rem;
+    width: 100%;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topology-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Small (< 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .topology-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-brand-title {
+    font-size: 1.1rem;
+  }
+
+  .nav-brand-subtitle {
+    font-size: 0.6rem;
+  }
+
+  .nav-brand-logo {
+    height: 40px;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+}

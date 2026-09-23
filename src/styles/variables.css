@@ -1,0 +1,113 @@
+/* ==========================================================================
+   PYCS Design Tokens & Theme Variables
+   ========================================================================== */
+
+:root {
+  /* Brand Identity Colors */
+  --pycs-navy-primary: #0B2545;
+  --pycs-navy-dark: #07172C;
+  --pycs-navy-light: #133E68;
+  --pycs-cyan-accent: #0284C7;
+  --pycs-cyan-hover: #0369A1;
+  --pycs-cyan-subtle: #E0F2FE;
+  --pycs-teal: #0D9488;
+  --pycs-amber: #D97706;
+  --pycs-orange: #EA580C;
+  
+  /* Shared Gradients */
+  --grad-primary: linear-gradient(135deg, #0B2545 0%, #133E68 60%, #0284C7 100%);
+  --grad-accent: linear-gradient(135deg, #0284C7 0%, #0D9488 100%);
+  --grad-surface-light: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(11, 37, 69, 0.08), 0 1px 2px 0 rgba(11, 37, 69, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(11, 37, 69, 0.1), 0 2px 4px -1px rgba(11, 37, 69, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(11, 37, 69, 0.12), 0 4px 6px -2px rgba(11, 37, 69, 0.07);
+  --shadow-xl: 0 20px 25px -5px rgba(11, 37, 69, 0.14), 0 10px 10px -5px rgba(11, 37, 69, 0.06);
+  --shadow-glow: 0 0 25px rgba(2, 132, 199, 0.25);
+  
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT THEME (Default)
+   -------------------------------------------------------------------------- */
+[data-theme='light'] {
+  --bg-main: #FAFBFC;
+  --bg-secondary: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --bg-card-muted: #F8FAFC;
+  --bg-hero: radial-gradient(circle at 80% 20%, rgba(2, 132, 199, 0.08) 0%, rgba(250, 251, 252, 1) 70%), #FAFBFC;
+  
+  --text-primary: #0B2545;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-light: #94A3B8;
+  --text-on-dark: #FFFFFF;
+
+  --border-subtle: #E2E8F0;
+  --border-medium: #CBD5E1;
+  --border-focus: #0284C7;
+  --border-glow: rgba(2, 132, 199, 0.3);
+
+  --nav-bg: rgba(255, 255, 255, 0.88);
+  --nav-border: rgba(226, 232, 240, 0.8);
+  --card-glass: rgba(255, 255, 255, 0.85);
+
+  --badge-bg: #E0F2FE;
+  --badge-text: #0369A1;
+  --badge-border: #BAE6FD;
+
+  --grid-pattern: rgba(11, 37, 69, 0.04);
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME
+   -------------------------------------------------------------------------- */
+[data-theme='dark'] {
+  --bg-main: #070B14;
+  --bg-secondary: #0D1322;
+  --bg-card: #111827;
+  --bg-card-hover: #172136;
+  --bg-card-muted: #0F172A;
+  --bg-hero: radial-gradient(circle at 80% 20%, rgba(2, 132, 199, 0.15) 0%, rgba(7, 11, 20, 1) 75%), #070B14;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-light: #64748B;
+  --text-on-dark: #FFFFFF;
+
+  --border-subtle: #1E293B;
+  --border-medium: #334155;
+  --border-focus: #38BDF8;
+  --border-glow: rgba(56, 189, 248, 0.4);
+
+  --nav-bg: rgba(11, 17, 32, 0.88);
+  --nav-border: rgba(30, 41, 59, 0.8);
+  --card-glass: rgba(17, 24, 39, 0.85);
+
+  --badge-bg: rgba(2, 132, 199, 0.18);
+  --badge-text: #38BDF8;
+  --badge-border: rgba(56, 189, 248, 0.35);
+
+  --grid-pattern: rgba(56, 189, 248, 0.05);
+}
