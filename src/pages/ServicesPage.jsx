@@ -2,9 +2,9 @@ import React from 'react';
 import { PageBanner } from '../components/common/PageBanner';
 import { Services } from '../sections/Services';
 import { Button } from '../components/common/Button';
-import { Sparkles, ArrowRight, Layers } from 'lucide-react';
+import { ArrowRight, Layers } from 'lucide-react';
 
-export const ServicesPage = ({ onOpenAssessment }) => {
+export const ServicesPage = () => {
   return (
     <div className="services-page animate-fade-in">
       {/* Page Banner */}
@@ -19,7 +19,7 @@ export const ServicesPage = ({ onOpenAssessment }) => {
       />
 
       {/* Services Section with Filterable Grid & ISV Ecosystem */}
-      <Services onOpenAssessment={onOpenAssessment} />
+      <Services />
 
       {/* Engagement CTA */}
       <section className="section section-alt" style={{ paddingTop: '2rem' }}>
@@ -42,9 +42,6 @@ export const ServicesPage = ({ onOpenAssessment }) => {
             <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <Button variant="primary" size="lg" href="/contact" icon={ArrowRight}>
                 Schedule Technical Advisory Call
-              </Button>
-              <Button variant="secondary" size="lg" onClick={onOpenAssessment} icon={Sparkles} iconPosition="left">
-                Check AI Readiness
               </Button>
             </div>
           </div>

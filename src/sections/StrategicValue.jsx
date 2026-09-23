@@ -5,7 +5,7 @@ import { Badge } from '../components/common/Badge';
 import { Button } from '../components/common/Button';
 import { Layers, TrendingUp, Clock, DollarSign, Cpu, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
 
-export const StrategicValue = ({ onOpenAssessment }) => {
+export const StrategicValue = () => {
   const valueDrivers = [
     {
       icon: Layers,
@@ -50,7 +50,7 @@ export const StrategicValue = ({ onOpenAssessment }) => {
       <div className="container">
         
         <SectionHeader
-          eyebrow="Strategic Value &amp; Operational Impact"
+          eyebrow="Strategic Value & Operational Impact"
           eyebrowVariant="tech"
           title="Engineering Predictable"
           titleHighlight="Business Impact"
@@ -85,7 +85,7 @@ export const StrategicValue = ({ onOpenAssessment }) => {
           })}
         </div>
 
-        {/* Assessment Callout Banner */}
+        {/* CTA Banner — replaced assessment with consultation CTA */}
         <div
           style={{
             background: 'var(--grad-primary)',
@@ -98,32 +98,29 @@ export const StrategicValue = ({ onOpenAssessment }) => {
           }}
         >
           <div style={{ maxWidth: '780px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 2 }}>
-            <span className="badge" style={{ background: 'rgba(255, 255, 255, 0.15)', color: '#FFFFFF', borderColor: 'rgba(255, 255, 255, 0.3)', marginBottom: '1rem' }}>
-              Complimentary Diagnostic
-            </span>
             <h3 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.4rem)', fontWeight: 800, color: '#FFFFFF', marginBottom: '1rem' }}>
-              Where Does Your Enterprise Stand on the Autonomy Curve?
+              Ready to Transform Your Industrial Operations?
             </h3>
             <p style={{ fontSize: '1.05rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: '1.6', marginBottom: '2rem' }}>
-              Take our 2-minute Industrial AI &amp; Enterprise Application Readiness Assessment to benchmark your current digital maturity and receive tailored advisory recommendations.
+              Connect with our Pune-based advisory team to discuss your enterprise IT landscape, industrial AI roadmap, or process harmonization requirements.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <Button
                 variant="accent"
                 size="lg"
-                onClick={onOpenAssessment}
+                href="/contact"
                 icon={ArrowRight}
                 style={{ background: '#FFFFFF', color: '#0B2545', fontWeight: 700 }}
               >
-                Launch 2-Min Readiness Assessment
+                Schedule a Consultation
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                href="/contact"
+                href="/services"
                 style={{ color: '#FFFFFF', borderColor: 'rgba(255, 255, 255, 0.4)' }}
               >
-                Schedule Direct Consultation
+                Explore Our Services
               </Button>
             </div>
           </div>

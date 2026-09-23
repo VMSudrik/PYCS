@@ -10,11 +10,11 @@ import { TransformationFramework } from '../components/interactive/Transformatio
 import { coreServices, industries, leadershipData } from '../data/contentData';
 import { ArrowRight, Sparkles, Layers, Cpu, Activity, HeartHandshake, ShieldCheck, Award, Quote } from 'lucide-react';
 
-export const HomePage = ({ onOpenAssessment }) => {
+export const HomePage = () => {
   return (
     <div className="home-page animate-fade-in">
       {/* Hero Section with Live Digital Thread */}
-      <Hero onOpenAssessment={onOpenAssessment} />
+      <Hero />
 
       {/* Trust & Metrics Bar */}
       <TrustBar />
@@ -194,7 +194,7 @@ export const HomePage = ({ onOpenAssessment }) => {
         </div>
       </section>
 
-      {/* Callout Assessment Banner */}
+      {/* Contact CTA Banner */}
       <section className="section section-alt">
         <div className="container">
           <div
@@ -208,28 +208,28 @@ export const HomePage = ({ onOpenAssessment }) => {
             }}
           >
             <h3 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.3rem)', fontWeight: 800, color: '#FFFFFF', marginBottom: '1rem' }}>
-              Where Does Your Enterprise Stand on the Autonomy Curve?
+              Ready to Begin Your Industrial Transformation?
             </h3>
             <p style={{ fontSize: '1.05rem', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '700px', margin: '0 auto 2rem auto', lineHeight: '1.6' }}>
-              Benchmark your current PLM, MES, and Industrial AI maturity in 2 minutes and receive custom recommendations.
+              Connect with our Pune-based advisory team to chart your path from legacy bottlenecks to intelligent, human-centered autonomy.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <Button
                 variant="accent"
                 size="lg"
-                onClick={onOpenAssessment}
-                icon={Sparkles}
+                href="/contact"
+                icon={ArrowRight}
                 style={{ background: '#FFFFFF', color: '#0B2545', fontWeight: 700 }}
               >
-                Launch 2-Min AI Readiness Assessment
+                Start a Conversation
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                href="/contact"
+                href="/services"
                 style={{ color: '#FFFFFF', borderColor: 'rgba(255, 255, 255, 0.4)' }}
               >
-                Contact Pune Office
+                Explore Our Services
               </Button>
             </div>
           </div>

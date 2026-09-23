@@ -6,7 +6,7 @@ import { Button } from '../components/common/Button';
 import { coreServices, isvEcosystem } from '../data/contentData';
 import { Layers, Cpu, Activity, GitMerge, Users, Compass, CheckCircle2, ChevronDown, ChevronUp, ArrowRight, Sparkles } from 'lucide-react';
 
-export const Services = ({ onOpenAssessment }) => {
+export const Services = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [expandedCardId, setExpandedCardId] = useState(null);
 
@@ -178,8 +178,8 @@ export const Services = ({ onOpenAssessment }) => {
           </div>
 
           <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-            <Button variant="primary" size="md" onClick={onOpenAssessment} icon={ArrowRight}>
-              Evaluate Your Enterprise Toolchain Alignment
+            <Button variant="primary" size="md" href="/contact" icon={ArrowRight}>
+              Discuss Your Enterprise Toolchain Requirements
             </Button>
           </div>
         </div>

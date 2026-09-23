@@ -25,7 +25,7 @@ import {
   UserCheck
 } from 'lucide-react';
 
-export const AboutPage = ({ onOpenAssessment }) => {
+export const AboutPage = () => {
   const valueIcons = {
     listening: Headphones,
     winwin: Handshake,
@@ -374,30 +374,28 @@ export const AboutPage = ({ onOpenAssessment }) => {
             }}
           >
             <h3 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.3rem)', fontWeight: 800, color: '#FFFFFF', marginBottom: '1rem' }}>
-              Benchmark Your Industrial AI &amp; IT Maturity
+              Ready to Advance Your Industrial Operations?
             </h3>
             <p style={{ fontSize: '1.05rem', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '700px', margin: '0 auto 2rem auto', lineHeight: '1.6' }}>
-              Take our 2-minute diagnostic to score your organization across the autonomy curve and receive targeted advisory recommendations.
+              Connect directly with our advisory team in Pune to map your transformation roadmap across Technology, Process, and People.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-              {onOpenAssessment && (
-                <Button
-                  variant="accent"
-                  size="lg"
-                  onClick={onOpenAssessment}
-                  icon={Sparkles}
-                  style={{ background: '#FFFFFF', color: '#0B2545', fontWeight: 700 }}
-                >
-                  Launch 2-Min Readiness Assessment
-                </Button>
-              )}
+              <Button
+                variant="accent"
+                size="lg"
+                href="/contact"
+                icon={ArrowRight}
+                style={{ background: '#FFFFFF', color: '#0B2545', fontWeight: 700 }}
+              >
+                Schedule a Consultation
+              </Button>
               <Button
                 variant="outline"
                 size="lg"
-                href="/contact"
+                href="/services"
                 style={{ color: '#FFFFFF', borderColor: 'rgba(255, 255, 255, 0.4)' }}
               >
-                Schedule Direct Consultation
+                Explore Our Services
               </Button>
             </div>
           </div>

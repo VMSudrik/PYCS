@@ -5,7 +5,7 @@ import { Badge } from '../components/common/Badge';
 import { DigitalThreadVisualizer } from '../components/interactive/DigitalThreadVisualizer';
 import { companyInfo } from '../data/contentData';
 
-export const Hero = ({ onOpenAssessment }) => {
+export const Hero = () => {
   return (
     <section id="home" className="section bg-grid-pattern bg-circuit-overlay" style={{ paddingTop: 'clamp(3rem, 6vw, 5rem)', paddingBottom: 'clamp(4rem, 8vw, 6.5rem)' }}>
       <div className="container">
@@ -56,11 +56,11 @@ export const Hero = ({ onOpenAssessment }) => {
               <Button
                 variant="secondary"
                 size="lg"
-                onClick={onOpenAssessment}
-                icon={Cpu}
-                iconPosition="left"
+                href="/about"
+                icon={ArrowRight}
+                iconPosition="right"
               >
-                Check AI Readiness
+                Learn About PYCS
               </Button>
             </div>
 

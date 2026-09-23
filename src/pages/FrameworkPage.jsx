@@ -7,7 +7,7 @@ import { Badge } from '../components/common/Badge';
 import { Button } from '../components/common/Button';
 import { Cpu, GitBranch, Users, CheckCircle2, ArrowRight, ShieldCheck, Sparkles, Layers } from 'lucide-react';
 
-export const FrameworkPage = ({ onOpenAssessment }) => {
+export const FrameworkPage = () => {
   return (
     <div className="framework-page animate-fade-in">
       {/* Page Banner */}
@@ -101,8 +101,8 @@ export const FrameworkPage = ({ onOpenAssessment }) => {
 
           {/* Bottom CTAs */}
           <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-            <Button variant="primary" size="lg" onClick={onOpenAssessment} icon={Sparkles}>
-              Test Your Framework Maturity
+            <Button variant="primary" size="lg" href="/contact" icon={ArrowRight}>
+              Start a Consultation
             </Button>
             <Button variant="outline" size="lg" href="/services">
               View Consulting Services
