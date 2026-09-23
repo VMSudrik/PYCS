@@ -48,6 +48,14 @@
    Tablets Portrait (< 768px)
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
+  .nav-cta-desktop {
+    display: none !important;
+  }
+
+  .nav-container {
+    height: 68px;
+  }
+
   .section {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;

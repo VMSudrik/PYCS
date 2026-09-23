@@ -23,7 +23,7 @@ export function App() {
         <ScrollToTop />
 
         {/* Global Navigation */}
-        <Navbar onOpenAssessment={() => setIsAssessmentOpen(true)} />
+        <Navbar />
 
         {/* Multi-Page Routes */}
         <main id="main-content">
