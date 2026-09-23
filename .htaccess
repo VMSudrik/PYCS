@@ -1,0 +1,14 @@
+# Production Apache / cPanel URL Rewrite Configuration for React Single Page Application (SPA)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Serve existing static files directly
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  
+  # Fallback all client routes to index.html
+  RewriteRule . /index.html [L]
+</IfModule>
