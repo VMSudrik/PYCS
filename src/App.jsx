@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { ScrollToTop } from './components/common/ScrollToTop';
@@ -14,7 +14,7 @@ import { ContactPage } from './pages/ContactPage';
 
 export function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="pycs-app">
         {/* Reset Scroll on Page Transition */}
         <ScrollToTop />
@@ -38,7 +38,7 @@ export function App() {
         {/* Global Footer */}
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
